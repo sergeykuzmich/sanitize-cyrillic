@@ -18,8 +18,6 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 
 ## Description ##
 
-The plugin replaces cyrillic characters in uploaded file names and page/post url.
-
 ## Installation ##
 
 1. Upload folder `sanitize-cyrillic` to the `/wp-content/plugins/` directory;
