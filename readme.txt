@@ -1,18 +1,17 @@
 === Sanitize Cyrillic ===
-Contributors: Umnyjcom
-Donate link: http://kuzmi.ch
-Tags: title, upload
+Contributors: sergeykuzmich
+Tags: title, upload, url
 Requires at least: 3.9.1
-Tested up to: 3.9.1
+Tested up to: 4.1.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The plugin replaces cyrillic characters in uploaded filenames and page/post url.
+The plugin replaces cyrillic characters in uploaded file names and page/post url.
 
 == Description ==
 
-The plugin replaces cyrillic characters in uploaded filenames and page/post url.
+The plugin replaces cyrillic characters in uploaded file names and page/post url.
 
 == Installation ==
 
@@ -27,7 +26,3 @@ The plugin replaces cyrillic characters in uploaded filenames and page/post url.
 
 = 1.0.0 =
 * Plugin Release
-
-== For Developers ==
-
-[GitHub Repo](https://github.com/SergeyKuzmich/sanitize-cyrillic)
