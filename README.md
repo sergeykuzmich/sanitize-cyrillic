@@ -1,7 +1,7 @@
 # Sanitize Cyrillic #
 **Contributors:** sergeykuzmich
   
-**Tags:** title, upload, url
+**Tags:** title, upload, url, files
   
 **Requires at least:** 3.9.1
   

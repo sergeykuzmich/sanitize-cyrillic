@@ -1,6 +1,6 @@
 === Sanitize Cyrillic ===
 Contributors: sergeykuzmich
-Tags: title, upload, url
+Tags: title, upload, url, files
 Requires at least: 3.9.1
 Tested up to: 4.1.1
 Stable tag: 1.0.0
