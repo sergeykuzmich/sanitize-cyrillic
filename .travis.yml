@@ -1,0 +1,27 @@
+dist: trusty
+language: php
+php:
+- 5.5
+- 5.6
+- 7.0
+- 7.1
+git:
+  depth: 5
+branches:
+  only:
+  - master
+  - "/\\d\\.\\d\\.\\d/"
+script:
+- php -l *.php
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: deploy/deploy.sh
+  on:
+    tags: true
+    php: 7.1
+env:
+  global:
+  - SVN_REPOSITORY=https://plugins.svn.wordpress.org/sanitize-cyrillic/
+  - secure: hfA9vFw40eQz4+pWidRQonneFmb47HNFR53ohoFQSohyIH/w6VN9lttL4s2GFEsPzGd4woEIHe/x9LSV1xnZ+0lP0RhhrRE+65BJWqK6tdpwm0g5foKXsVqGuHCNYcXIHUD+OFxlv29NXrpm2he6UnVgI7W/uZl++5Mbw/fnulJbKBC/4FMSfdd5q6DPAcG/PZGfEU5u7wxGS4fZn/ZWdYI1Bsi+csi/8mcnhd7gZ8UW57snLhSF7yKXZLY5ig2KMqcFGk9OrBW23PnwV3OMqp9WsL0A4AC4fh7/Jt7/tnCZaB2fjFfrYuwiLsZdYMPxMVt8TD0F6g5Ht8pT62CIH9exVvbDhahks57p9nlYYbhXIPzc6vBouDXYFnVtnLXuJ9eJYFakHHqfuLxIujAjKUKMmjrLA14U6uk0TGO6xeYbk1wE7iQookGF1BOPKsdqtcvxyO2S7dOifUlUvo5/y5Lp2G6hYLtsyXXx8VLMIdhtQ7DcGHiKloQVA+UWfaHEDyx4cQMCLPQTiotbDFQVtQcu4rDRsXgpGktlPcDfToSx7gNA2t+Jm3Hfnp3XZJQfhWBCFwK43lk2BWW+IMjO/BKcMcLscqPMepFvd+77o2i2a3uHdDwNC69UpLt9p8bKStCBjhmEekab70yPKBFuAP2Wog1iAd+XSq3TFnXmhp8=
+  - secure: P9yL+QMQXhZHzTnIfVl3YkZY4RprJOoh+Sw+AjVZu7Ou4B4rRZQgCYtN5xiva2CvnLHl7q9fYa4n0xDePpxkv+vDtqGFiC0qIbFc0vh+V7vAhSW1/Um6HeJiU7Qx87Sb69qBJvHmociD5c/7wK7N6FKvbSw3dAOBcTRjGparl3t/APYmBiZzyLGoiXjI/yXIUGkSIoW2jJAk1McOdXwZUPm6tGQX1gQHIXb3dTc3dyYtyJdC5CvOeilug+GR08yDMAWIrNon6ElZK+fR1r6YzFjpcM/Z/AwbB82QjK4D85sF2lTKXjaI/Y1eFGuStjJVSOgYm0dePcHQJroUygPv9qVMdUX+iZBkiBH90RlF2wnUWgCw8GjUt1vja7OmAP/I3Olj8t10wb50bG8Z1YbLA+cQPCuicfAJp4n6Yw1szJ2FgaRSqoW6oYfTF3Vw+n/DBtNFcKQfO14VC2KAYD+oZHV81d5yB4YAdzxKyGw2/g8HQvAa0xCAo93mNwtfoAEmWQk15kBPSgXEQaJdg5uVvfEscOGPlR3jOG+Me5KrzdzDoYciyxHTdhd8a1pp79Jc6nGG0lOVH/tmNw8PeTC74i++HVWPo2IKdbAV5N6U8wdVvhRfmhP58R2oxHiFy7eHdhkTm5xyRnYaY9crGig2x/80eb6UoahG0xBcvPlAX8c=
