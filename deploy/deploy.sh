@@ -3,10 +3,10 @@
 # @Author: Sergey Kuzmich
 # @Date:   2017-10-15 00:47:04
 # @Last Modified by:   Sergey Kuzmich
-# @Last Modified time: 2017-10-17 13:36:47
+# @Last Modified time: 2017-10-17 13:52:50
 
 #  1. Clone complete SVN repository to separate directory
-svn co $SNV_REPOSITORY ../svn
+svn co $SVN_REPOSITORY ../svn
 
 #  2. Copy git repository contents to SNV trunk/ directory
 cp -R ./* ../svn/trunk/
