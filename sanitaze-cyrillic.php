@@ -17,7 +17,7 @@ if (!defined('WPINC')) {
     die;
 }
 
-add_filter('wp_handle_upload_prefilter', 'sanitize_cyrillic_file_name');
+add_filter('sanitize_file_name', 'sanitize_cyrillic_file_name', 10, 2);
 function sanitize_cyrillic_file_name($file)
 {
     preg_match('%\.[^.\\\\/:*?"<>|\r\n]+$%i', $file['name'], $matches);
