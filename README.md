@@ -5,11 +5,11 @@
 
 **Requires at least:** 3.9.1
 
-**Tested up to:** 4.1.1
+**Tested up to:** 4.9.1
 
 **Requires PHP at least:** 5.5
 
-**Stable tag:** 1.0.1
+**Stable tag:** 1.1.0
 
 **License:** GPLv2 or later
 
@@ -31,5 +31,5 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 
 ## Changelog ##
 
-### 1.0.1 ###
-* Automate deployment with TravisCI
+### 1.1.0 ###
+* Update uploaded files sanitize name method
