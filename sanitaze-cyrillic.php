@@ -17,15 +17,13 @@ if (!defined('WPINC')) {
     die;
 }
 
-add_filter('sanitize_file_name', 'sanitize_cyrillic_file_name', 10, 2);
-function sanitize_cyrillic_file_name($file)
+add_filter('sanitize_file_name', 'sanitize_cyrillic_file_name', 10, 3);
+function sanitize_cyrillic_file_name($name, $raw_name)
 {
-    preg_match('%\.[^.\\\\/:*?"<>|\r\n]+$%i', $file['name'], $matches);
+    preg_match('%\.[^.\\\\/:*?"<>|\r\n]+$%i', $name, $matches);
     $ext = $matches[0];
-    $name = sanitaze(basename($file['name'], $ext));
-    $file['name'] = $name . $ext;
-
-    return $file;
+    $base_name = sanitaze(basename($name, $ext));
+    return $base_name . $ext;
 }
 
 add_filter('sanitize_title', 'sanitize_cyrillic_title', 10, 3);
