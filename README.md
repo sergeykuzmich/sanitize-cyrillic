@@ -1,5 +1,11 @@
 # Sanitize Cyrillic #
-**Contributors:** sergeykuzmich
+
+[![Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+[![Wordpress Version](https://img.shields.io/wordpress/v/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+[![Plugin Rating](https://img.shields.io/wordpress/plugin/r/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+
+**Contributors:** Sergey Kuzmich
 
 **Tags:** title, upload, url, files
 
@@ -15,10 +21,7 @@
 
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
-
 The plugin replaces cyrillic characters in uploaded file names and page/post url.
-
-## Description ##
 
 ## Installation ##
 
@@ -26,8 +29,6 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 2. Activate the plugin through the 'Plugins' menu in WordPress;
 
 ## Frequently Asked Questions ##
-
-## Screenshots ##
 
 ## Changelog ##
 
