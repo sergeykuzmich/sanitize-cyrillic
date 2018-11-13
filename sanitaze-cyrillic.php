@@ -3,10 +3,10 @@
 Plugin Name: Sanitize Cyrillic
 Plugin URI: http://wordpress.org/plugins/sanitize-cyrillic/
 Description: Plugin replaces Cyrillic characters in the names of uploaded files and url addresses pages and posts.
-Version: 1.1.0
+Version: 1.1.1
 Author: Sergey Kuzmich
 Author URI: http://kuzmi.ch
-License: GPLv2
+License: GPLv3
 */
 
 /**

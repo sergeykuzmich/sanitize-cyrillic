@@ -11,15 +11,15 @@
 
 **Requires at least:** 3.9.1
 
-**Tested up to:** 4.9.1
+**Tested up to:** 4.9.1=8
 
 **Requires PHP at least:** 5.5
 
-**Stable tag:** 1.1.0
+**Stable tag:** 1.1.1
 
-**License:** GPLv2 or later
+**License:** GPLv3 or later
 
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+**License URI:** http://www.gnu.org/licenses/gpl-3.0.html
 
 The plugin replaces cyrillic characters in uploaded file names and page/post url.
 
@@ -32,5 +32,5 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 
 ## Changelog ##
 
-### 1.1.0 ###
-* Update uploaded files sanitize name method
+### 1.1.1 ###
+* Verify compatibility with WordPress 4.9.8
