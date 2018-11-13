@@ -11,7 +11,7 @@
 
 **Requires at least:** 3.9.1
 
-**Tested up to:** 4.9.1=8
+**Tested up to:** 4.9.8
 
 **Requires PHP at least:** 5.5
 
