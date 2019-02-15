@@ -3,40 +3,63 @@
 # @Author: Sergey Kuzmich
 # @Date:   2017-10-15 00:47:04
 # @Last Modified by:   Sergey Kuzmich
-# @Last Modified time: 2017-10-17 13:52:50
+# @Last Modified time: 2019-02-14 16:39:11
 
 #  1. Clone complete SVN repository to separate directory
+printf "1. Cloning source repository...\n"
 svn co $SVN_REPOSITORY ../svn
 
 #  2. Copy git repository contents to SNV trunk/ directory
+printf "2. Copy git source to svn...\n"
 cp -R ./* ../svn/trunk/
 
 #  3. Go to trunk/
+printf "3. Go to svn repository...\n"
 cd ../svn/trunk/
 
 #  4. Move assets/ to SVN /assets/
+printf "4. Copy assets...\n"
 mv ./assets/ ../assets/
 
-#  5. Delete .git/
+#  5. Cleanup repository
+printf "5. Clean up files...\n"
+#  5.1 Delete .git/
 rm -rf .git/
-
-#  6. Delete deploy/
+#  5.2 Delete deploy/
 rm -rf deploy/
-
-#  7. Delete .travis.yml
+#  5.3 Delete .travis.yml
 rm -rf .travis.yml
-
-#  8. Delete README.md
+#  5.4 Delete README.md
 rm -rf README.md
 
-#  9. Go to SVN home directory
+#  6. Go to SVN home directory
+printf "6. Go to svn root directory...\n"
 cd ../
 
-# 10. Copy trunk/ to tags/{tag}/
-svn cp trunk tags/$TRAVIS_TAG
+#. 7. Check for semver tag
+printf "7. Detect deployment type...\n"
+semver_pattern="^[0-9]+\.[0-9]+\.[0-9]+$"
+if [[ $TRAVIS_TAG =~ $semver_pattern ]]; then
+  #  8. Publish new release
+  printf "8. Publish new release...\n"
+  #  8.1 Copy trunk/ to tags/{tag}/
+  svn cp trunk tags/$TRAVIS_TAG
+  #  8.2 Remove readme.txt from plugin archive
+  svn remove --force tags/$TRAVIS_TAG/readme.txt
 
-# 11. Commit SVN tag
-svn ci  --message "Release $TRAVIS_TAG" \
+  #  8.3 Set commit message
+  SVN_COMMIT_MESSAGE="Release $TRAVIS_TAG"
+else
+  #  8. Just update trunk
+  printf "8. Just update trunk...\n"
+  #  8.2 Set commit message
+  SVN_COMMIT_MESSAGE="Revise $TRAVIS_TAG"
+fi
+
+#  9. Commit SVN tag
+printf "9. Commit changes '$SVN_COMMIT_MESSAGE'...\n"
+svn ci  --message "$SVN_COMMIT_MESSAGE" \
         --username $SVN_USERNAME \
         --password $SVN_PASSWORD \
-        --non-interactive
+        --non-interactive \
+        --trust-server-cert
