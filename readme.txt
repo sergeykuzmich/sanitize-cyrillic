@@ -24,5 +24,9 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 == Changelog ==
 
 = 1.2.0 =
+
+**WARNING**
+> The plugin may contain unstable behavior due unicode characters. Since most of hosting providers already support unicode at the servers, plugin won't be updated anymore in future.
+
 * Update filename escaping expression
 * Verify compatibility with WordPress 5.0.3
