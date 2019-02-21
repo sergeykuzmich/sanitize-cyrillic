@@ -29,6 +29,18 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 * Update filename escaping expression
 * Verify compatibility with WordPress 5.0.3
 
+= 1.1.1 =
+* Verify compatibility with WordPress 4.9.8
+
+= 1.1.0 =
+* Update uploaded files sanitize name method
+
+= 1.0.1 =
+* Automate deployment with TravisCI
+
+= 1.0.0 =
+* Release the plugin
+
 == Upgrade Notice ==
 
 = 1.2.0 =
