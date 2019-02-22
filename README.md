@@ -1,21 +1,22 @@
 # Sanitize Cyrillic #
+
+[![Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+[![Wordpress Version](https://img.shields.io/wordpress/v/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+[![Plugin Rating](https://img.shields.io/wordpress/plugin/r/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
+
 **Contributors:** sergeykuzmich  
-**Donate link:** https://www.buymeacoffee.com/sergeykuzmich  
 **Tags:** title, upload, url, files  
 **Requires at least:** 3.9.1  
-**Tested up to:** 5.0.3  
-**Requires PHP:** 5.6  
-**Stable tag:** 1.2.3  
+**Tested up to:** 4.9.8  
+**Requires PHP at least:** 5.5  
+**Stable tag:** 1.1.1  
 **License:** GPLv3 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 
 The plugin replaces cyrillic characters in uploaded file names and page/post urls.
 
 ## Description ##
-
-The plugin replaces cyrillic characters in uploaded file names and page/post urls.
-
-**WARNING:** The plugin may contain unstable behavior due unicode characters. Since most of hosting providers already support unicode at the servers, plugin won't be updated anymore in future.
 
 ## Installation ##
 
@@ -24,24 +25,5 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 
 ## Changelog ##
 
-### 1.2.3 ###
-
-* Update filename escaping expression
-* Verify compatibility with WordPress 5.0.3
-
 ### 1.1.1 ###
 * Verify compatibility with WordPress 4.9.8
-
-### 1.1.0 ###
-* Update uploaded files sanitize name method
-
-### 1.0.1 ###
-* Automate deployment with TravisCI
-
-### 1.0.0 ###
-* Release the plugin
-
-## Upgrade Notice ##
-
-### 1.2.3 ###
-Plugin may contain unstable behavior due unicode characters. Since most of hosting providers already support unicode at the servers, plugin won't be updated anymore in future.
