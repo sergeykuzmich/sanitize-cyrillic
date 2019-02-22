@@ -2,7 +2,7 @@
 Contributors: sergeykuzmich
 Tags: title, upload, url, files
 Requires at least: 3.9.1
-Tested up to: 4.9.8
+Tested up to: 5.0.3
 Requires PHP at least: 5.5
 Stable tag: 1.1.1
 License: GPLv3 or later
