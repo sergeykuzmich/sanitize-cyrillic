@@ -1,10 +1,4 @@
 # Sanitize Cyrillic #
-
-[![Plugin Downloads](https://img.shields.io/wordpress/plugin/dt/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
-[![Plugin Version](https://img.shields.io/wordpress/plugin/v/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
-[![Wordpress Version](https://img.shields.io/wordpress/v/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
-[![Plugin Rating](https://img.shields.io/wordpress/plugin/r/sanitize-cyrillic.svg)](https://wordpress.org/plugins/sanitize-cyrillic/)
-
 **Contributors:** sergeykuzmich  
 **Tags:** title, upload, url, files  
 **Requires at least:** 3.9.1  
