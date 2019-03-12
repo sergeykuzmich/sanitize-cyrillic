@@ -1,3 +1,8 @@
+> # 🧨 WARNING
+> ### Plugin has been deprecated!
+> The plugin may contain unstable behavior due unicode characters.  
+> Since most of hosting providers already support unicode at the servers, plugin won't be updated anymore in future.
+
 # Sanitize Cyrillic #
 **Contributors:** sergeykuzmich  
 **Tags:** title, upload, url, files  
@@ -13,8 +18,6 @@ The plugin replaces cyrillic characters in uploaded file names and page/post url
 ## Description ##
 
 The plugin replaces cyrillic characters in uploaded file names and page/post urls.
-
-**WARNING:** The plugin may contain unstable behavior due unicode characters. Since most of hosting providers already support unicode at the servers, plugin won't be updated anymore in future.
 
 ## Installation ##
 
